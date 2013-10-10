@@ -1,0 +1,45 @@
+Developer Notes
+
+	I basically want to make a generic tree function that will allow
+	me to pass in any structure.  The only way I can see doing this
+	is by passing the actual pointer to the data.  Unfortunately, I
+	don't know what this data is so I'll have to make the nodes have
+	a char *key and a void pointer to the actual data (void pointers
+	are one of the reasons why I love C).  
+
+	Basically I want to do this:
+
+	typedef struct {
+		char foo[40];
+		int  bar;
+	} my_struct;
+
+	my_struct *foo;
+	malloc()
+	
+	....
+
+	tree_node_add(&tree, "key1", foo);
+	....
+
+	
+
+	Like the XML parser before, I think i'm going to use a
+	walk function via pointer so you can walk the tree and perform any
+	function on the current node.
+
+	void user_function(char *key, my_struct *foo);
+	...
+	tree_walk(&tree, user_function, INORDER);
+	
+
+	
+	
+File Structure
+	
+	cddb.c - main driver, this should initialize the UI and make tree initializing calls
+	data.c - main functionality for IO and lower level stuff
+	tree.c - tree library
+	ui.c   - handle and user interface and functionality from the user
+
+	

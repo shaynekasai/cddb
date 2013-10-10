@@ -1,0 +1,4 @@
+- Fix up the UI, it's a bit flakey
+
+- Fix the conflicting data structures, right now the tree function arguments
+  conflict so I have to cast

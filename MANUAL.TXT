@@ -1,0 +1,44 @@
+COMP 3425 - a CD database application
+
+Author: Shayne Kasai
+Date: March 26, 2002
+
+* Introduction
+	
+	This is an implementation of a database using a non-balanced binary tree.
+	Records are stored in a binary file.  The user will have the option to
+	modify, add, and view these records.
+
+	The datafile is written to the filename specified at command line.  All data
+	in the file is overwritten if the user chooses to write to the file.
+
+* Synopsis
+
+	Usage: cddb filename.dat 
+	       
+	       where filename.dat is the file to open.
+
+	
+* Options
+	All options are contained within the menus of the application.
+	
+* Bugs
+	See TODO and BUGS
+
+* Authors
+	
+	Shayne Kasai <info@shaynekasai.com>
+		
+
+* Compiling
+	
+	This assignment has been compiled using GCC for Linux and Mingw
+	for the Win32 binary.  It should work with other compilers and
+	I'm assuming that it will compile under Cygwin.
+
+* See Also
+
+	AUTHORS
+	BUGS
+	README
+	TODO

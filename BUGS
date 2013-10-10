@@ -1,0 +1,3 @@
+- Casting mania, there's a lot of casting because of warnings by gcc... I think there might
+  be some datatype mismatch as well...
+- REMEMBER: Tree is of Node *.  I keep on forgetting that.
